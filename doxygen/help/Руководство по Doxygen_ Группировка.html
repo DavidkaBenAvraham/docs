@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0043)https://www.doxygen.nl/manual/grouping.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><script type="text/javascript" src="chrome-extension://kajbojdeijchbhbodifhaigbnbodjahj/getShopifyInfoInDocument.js"></script><script type="text/javascript" src="chrome-extension://kajbojdeijchbhbodifhaigbnbodjahj/windowscript.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Source code documentation and analysis tool">
+<meta name="keywords" content="documentation,tool,source code,open source,GPL,analysis,structure">
+<meta name="generator" content="Doxygen 1.10.0">
+<title _msttexthash="7716462" _msthash="0">Руководство по Doxygen: Группировка</title>
+<link href="./Руководство по Doxygen_ Группировка_files/tabs.css" rel="stylesheet" type="text/css">
+<script async="" src="./Руководство по Doxygen_ Группировка_files/f.txt" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Руководство по Doxygen_ Группировка_files/jquery.js.download"></script>
+<script type="text/javascript" src="./Руководство по Doxygen_ Группировка_files/dynsections.js.download"></script>
+<link href="./Руководство по Doxygen_ Группировка_files/navtree.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./Руководство по Doxygen_ Группировка_files/resize.js.download"></script>
+<script type="text/javascript" src="./Руководство по Doxygen_ Группировка_files/navtreedata.js.download"></script>
+<script type="text/javascript" src="./Руководство по Doxygen_ Группировка_files/navtree.js.download"></script>
+<link href="./Руководство по Doxygen_ Группировка_files/doxygen.css" rel="stylesheet" type="text/css">
+<link href="./Руководство по Doxygen_ Группировка_files/extra.css" rel="stylesheet" type="text/css">
+<style type="text/css">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip::before, .__react_component_tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0;
+  margin-left: 0;
+  visibility: visible;
+}
+.__react_component_tooltip.place-top::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-bottom::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-left::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  right: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-right::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+}</style><script src="chrome-extension://ajdpfmkffanmkhejnopjppegokpogffp/assets/prompt.js"></script><script id="navtreeindex1" type="text/javascript" src="./Руководство по Doxygen_ Группировка_files/navtreeindex1.js.download"></script></head>
+<body style="" cz-shortcut-listen="true">
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0" class="pageheader">
+ <tbody>
+ <tr style="height: 51px;">
+  <td id="projectlogo">
+    <a href="https://www.doxygen.org/index.html"><img src="./Руководство по Doxygen_ Группировка_files/doxygen.png" width="261" height="51" border="0" alt="Кислород" _mstalt="96577" _msthash="1"></a>
+  </td>
+  <td width="100%" align="center" valign="bottom"><a href="https://www.twitter.com/doxygen"><img src="./Руководство по Doxygen_ Группировка_files/twitter.png" alt="Следите за сообщениями doxygen в Twitter" border="0" width="16" height="16" _mstalt="543374" _msthash="2"></a>
+      <a href="https://github.com/doxygen/doxygen"><img src="./Руководство по Doxygen_ Группировка_files/github.png" alt="Doxygen на github" border="0" width="16" height="16" _mstalt="292864" _msthash="3"></a>
+      <a href="https://www.sourceforge.net/projects/doxygen"><img src="./Руководство по Doxygen_ Группировка_files/sourceforge.gif" alt="Doxygen на SourceForge" border="0" width="16" height="16" _mstalt="445263" _msthash="4"></a>
+  </td>
+  <td align="right">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_donations">
+<input type="hidden" value="doxygen@gmail.com" name="business">
+<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="tax" value="0">
+<input type="hidden" name="item_name" value="Doxygen donation">
+<input type="hidden" name="no_shipping" value="1">
+<table>
+<tbody><tr><td><input type="image" width="74" height="21" src="./Руководство по Doxygen_ Группировка_files/btn_donate_SM.gif" border="0" name="submit" alt="Пожертвуйте Doxygen с помощью PayPal!" _mstalt="654069" _msthash="5"></td></tr>
+<tr><td><select size="1" name="currency_code"> <option selected="selected" value="EUR" _msttexthash="802529" _msthash="6">€ (евро)</option> <option value="USD" _msttexthash="44291" _msthash="7">$ (долл. США)</option></select></td>
+<td>
+</td></tr>
+</tbody></table>
+</form>
+  </td>
+ </tr>
+ </tbody>
+</table>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="https://www.doxygen.org/index.html"><span _msttexthash="334776" _msthash="8">Дом</span></a></li>
+      <li><a href="https://www.doxygen.org/download.html"><span _msttexthash="1177735" _msthash="9">Загрузки</span></a></li>
+      <li><a href="https://www.doxygen.org/manual/index.html"><span _msttexthash="2114515" _msthash="10">Документация</span></a></li>
+      <li><a href="https://www.doxygen.org/helpers.html"><span><font _mstmutation="1" _msttexthash="1621152" _msthash="11">Расширения</font><div id="extwaiokist" style="display:none" v="fcoon" q="7c272caf" c="188.9" i="196" u="0.123" s="11112300" sg="svr_09102316-ga_11112300-bai_10232316" d="1" w="false" e="" a="2" m="BMe=" vn="3gtra"><div id="extwaigglbit" style="display:none" v="fcoon" q="7c272caf" c="188.9" i="196" u="0.123" s="11112300" sg="svr_09102316-ga_11112300-bai_10232316" d="1" w="false" e="" a="2" m="BMe="></div></div></span></a></li>
+      <li><a href="https://www.doxygen.org/support.html"><span _msttexthash="1386606" _msthash="12">Поддержка</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.10.0 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable" style="width: 6px; height: 618.6px; top: 87.8px;">
+  <div id="nav-tree" style="height: 618.6px;">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync" style="top: 5px;"><img src="./Руководство по Doxygen_ Группировка_files/sync_on.png" title="click to disable panel synchronisation"></div>
+    <ul style="display: block;"><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 0px;" _msttexthash="879060" _msthash="13">▼</span></a><span class="label"><a class="index.html" href="https://www.doxygen.nl/manual/index.html" _msttexthash="2599545" _msthash="14">Руководство по Doxygen</a></span></div><ul class="children_ul" style="display: block;"><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="index.html" href="https://www.doxygen.nl/manual/index.html" _msttexthash="630513" _msthash="15">Обзор</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="16">►</span></a><span class="label"><a class="install.html" href="https://www.doxygen.nl/manual/install.html" _msttexthash="1388556" _msthash="17">Установка</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="18">►</span></a><span class="label"><a class="starting.html" href="https://www.doxygen.nl/manual/starting.html" _msttexthash="2111226" _msthash="19">Начало работы</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="20">►</span></a><span class="label"><a class="docblocks.html" href="https://www.doxygen.nl/manual/docblocks.html" _msttexthash="4633499" _msthash="21">Документирование кода</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="22">►</span></a><span class="label"><a class="markdown.html" href="https://www.doxygen.nl/manual/markdown.html" _msttexthash="1600391" _msthash="23">Поддержка Markdown</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="lists.html" href="https://www.doxygen.nl/manual/lists.html" _msttexthash="983840" _msthash="24">Списках</a></span></div></li><li><div class="item selected" id="selected"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="25">►</span></a><span class="label"><a class="grouping.html" href="https://www.doxygen.nl/manual/grouping.html" _msttexthash="1853865" _msthash="26">Группировка</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="formulas.html" href="https://www.doxygen.nl/manual/formulas.html" _msttexthash="3275506" _msthash="27">В том числе формулы</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="tables.html" href="https://www.doxygen.nl/manual/tables.html" _msttexthash="2666170" _msthash="28">Включая таблицы</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="diagrams.html" href="https://www.doxygen.nl/manual/diagrams.html" _msttexthash="3582696" _msthash="29">Графики и диаграммы</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="preprocessing.html" href="https://www.doxygen.nl/manual/preprocessing.html" _msttexthash="6243328" _msthash="30">Предварительная обработка</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="output.html" href="https://www.doxygen.nl/manual/output.html" _msttexthash="2376426" _msthash="31">Форматы вывода</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="32">►</span></a><span class="label"><a class="searching.html" href="https://www.doxygen.nl/manual/searching.html" _msttexthash="631605" _msthash="33">Поиск</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="34">►</span></a><span class="label"><a class="customize.html" href="https://www.doxygen.nl/manual/customize.html" _msttexthash="5841212" _msthash="35">Настройка выходных данных</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="36">►</span></a><span class="label"><a class="custcmd.html" href="https://www.doxygen.nl/manual/custcmd.html" _msttexthash="5829265" _msthash="37">Пользовательские команды</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="external.html" href="https://www.doxygen.nl/manual/external.html" _msttexthash="7621341" _msthash="38">Ссылки на внешнюю документацию</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="39">►</span></a><span class="label"><a class="faq.html" href="https://www.doxygen.nl/manual/faq.html" _msttexthash="5420792" _msthash="40">Часто задаваемые вопросы</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="41">►</span></a><span class="label"><a class="trouble.html" href="https://www.doxygen.nl/manual/trouble.html" _msttexthash="4272359" _msthash="42">Устранение неполадок</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="features.html" href="https://www.doxygen.nl/manual/features.html" _msttexthash="984971" _msthash="43">Функции</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="44">►</span></a><span class="label"><a class="doxygen_usage.html" href="https://www.doxygen.nl/manual/doxygen_usage.html" _msttexthash="2595008" _msthash="45">Использование Doxygen</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="46">►</span></a><span class="label"><a class="doxywizard_usage.html" href="https://www.doxygen.nl/manual/doxywizard_usage.html" _msttexthash="2718599" _msthash="47">Использование Doxywizard</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="48">►</span></a><span class="label"><a class="autolink.html" href="https://www.doxygen.nl/manual/autolink.html" _msttexthash="8589529" _msthash="49">Автоматическая генерация ссылок</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="50">►</span></a><span class="label"><a class="config.html" href="https://www.doxygen.nl/manual/config.html" _msttexthash="2115308" _msthash="51">Конфигурация</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="52">►</span></a><span class="label"><a class="commands.html" href="https://www.doxygen.nl/manual/commands.html" _msttexthash="3931395" _msthash="53">Специальные команды</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="54">►</span></a><span class="label"><a class="htmlcmds.html" href="https://www.doxygen.nl/manual/htmlcmds.html" _msttexthash="1045720" _msthash="55">Команды HTML</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="xmlcmds.html" href="https://www.doxygen.nl/manual/xmlcmds.html" _msttexthash="1030263" _msthash="56">Команды XML</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="57">►</span></a><span class="label"><a class="emojisup.html" href="https://www.doxygen.nl/manual/emojisup.html" _msttexthash="2950454" _msthash="58">Поддержка эмодзи</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="langhowto.html" href="https://www.doxygen.nl/manual/langhowto.html" _msttexthash="4279990" _msthash="59">Интернационализация</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="60">►</span></a><span class="label"><a class="perlmod.html" href="https://www.doxygen.nl/manual/perlmod.html" _msttexthash="1962857" _msthash="61">Вывод модуля Perl</a></span></div></li><li><div class="item"><span class="arrow" style="width: 32px;">&nbsp;</span><span class="label"><a class="arch.html" href="https://www.doxygen.nl/manual/arch.html" _msttexthash="4934241" _msthash="62">Внутренние устройства Doxygen</a></span></div></li><li><div class="item"><a href="javascript:void(0)"><span class="arrow" style="padding-left: 16px;" _msttexthash="878878" _msthash="63">►</span></a><span class="label"><a class="changelog.html" href="https://www.doxygen.nl/manual/changelog.html" _msttexthash="2951260" _msthash="64">Список изменений</a></span></div></li></ul></li></ul></div>
+     <div id="nav-tree-ads-google">
+       <script async="" src="./Руководство по Doxygen_ Группировка_files/f.txt" crossorigin="anonymous"></script>
+        <!-- google ad fixed -->
+          <ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px;" data-ad-client="ca-pub-1917318012276499" data-ad-slot="5320520181"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+     </div>
+     <div id="nav-tree-ads-carbon">
+       <script async="" type="text/javascript" src="./Руководство по Doxygen_ Группировка_files/carbon.js.download" id="_carbonads_js"></script>
+     </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  </div>
+<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('grouping.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content" style="margin-left: 12px; height: 618.6px;">
+<div><div class="header" style="width: 960px;">
+  <div class="headertitle"><div class="title" _msttexthash="116246" _msthash="65">Grouping</div></div>
+</div><!--header-->
+<div class="contents" style="width: 960px;">
+<div class="textblock"><p _msttexthash="67560818" _msthash="66">Doxygen has three mechanisms to group things together. One mechanism works at a global level, creating a new page for each group. These groups are called <a class="el" href="https://www.doxygen.nl/manual/grouping.html#topics">'topics'</a> in the documentation. The second mechanism works within a member list of some compound entity, and is referred to as a <a class="el" href="https://www.doxygen.nl/manual/grouping.html#memgroup">'member groups'</a>. For <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdpage">pages</a> there is a third grouping mechanism referred to as <a class="el" href="https://www.doxygen.nl/manual/grouping.html#subpaging">subpaging</a>.</p>
+<h1><a class="anchor" id="topics"></a><font _mstmutation="1" _msttexthash="78039" _msthash="67">
+Topics</font></h1>
+<p _msttexthash="43373577" _msthash="68">Grouping is a way to group things together on a separate page, called a topic. You can document a group as a whole, as well as all individual members. Members of a group can be files, namespaces, classes, concepts, modules, functions, variables, enums, typedefs, and defines, but also other groups.</p>
+<p _msttexthash="34812622" _msthash="69">To define a group, you should put the <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmddefgroup">\defgroup</a> command in a special comment block. The first argument of the command is a label that should uniquely identify the group. The second argument is the name or title of the group as it should appear in the documentation.</p>
+<p _msttexthash="6928389" _msthash="70">You can make an entity a member of a specific group by putting a <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdingroup">\ingroup</a> command inside its documentation block.</p>
+<p><font _mstmutation="1" _msttexthash="42337880" _msthash="71">To avoid putting <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdingroup" _mstmutation="1">\ingroup</a> commands in the documentation for each member you can also group members together by the open marker  before the group and the closing marker  after the group. The markers can be put in the documentation of the group definition or in a separate documentation block.</font><code>@{</code><code>@}</code></p>
+<p _msttexthash="2749045" _msthash="72">Groups themselves can also be nested using these grouping markers.</p>
+<p _msttexthash="78464542" _msthash="73">You will get an error message when you use the same group label more than once. If you don't want doxygen to enforce unique labels, then you can use <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdaddtogroup">\addtogroup</a> instead of <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmddefgroup">\defgroup</a>. It can be used exactly like <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmddefgroup">\defgroup</a>, but when the group has been defined already, then it silently merges the existing documentation with the new one. The title of the group is optional for this command, so you can use </p><pre class="fragment">/** \addtogroup &lt;label&gt;
+ *  @{
+ */
+...
+
+/** @}*/
+</pre><p _msttexthash="3458065" _msthash="74"> to add additional members to a group that is defined in more detail elsewhere.</p>
+<p _msttexthash="69225416" _msthash="75">Note that compound entities (like classes, files and namespaces) can be put into multiple groups, but members (like variable, functions, typedefs and enums) can only be a member of one group (this restriction is in place to avoid ambiguous linking targets in case a member is not documented in the context of its class, namespace or file, but only visible as part of a group).</p>
+<p><font _mstmutation="1" _msttexthash="50490856" _msthash="76">Doxygen will put members into the group whose definition has the highest "priority": e.g. An explicit <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdingroup" _mstmutation="1">\ingroup</a> overrides an implicit grouping definition via  . Conflicting grouping definitions with the same priority trigger a warning, unless one definition was for a member without any explicit documentation.</font><code>@{</code><code>@}</code></p>
+<p _msttexthash="159714828" _msthash="77">В следующем примере VarInA помещается в группу A и автоматически разрешается конфликт для IntegerVariable, помещая его в группу IntVariables, так как второй экземпляр IntegerVariable не документирован:</p>
+<pre class="fragment">/**
+ * \ingroup A
+ */
+extern int VarInA;
+
+/**
+ * \defgroup IntVariables Global integer variables
+ * @{
+ */
+
+/** an integer variable */
+extern int IntegerVariable;
+
+/**@}*/
+
+....
+
+/**
+ * \defgroup Variables Global variables
+ */
+/**@{*/
+
+/** a variable in group A */
+int VarInA;
+
+int IntegerVariable;
+
+/**@}*/
+</pre><p _msttexthash="346268767" _msthash="78">Команда <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdref" _istranslated="1">\ref</a> может быть использована для ссылки на группу. Первым аргументом команды \ref должна быть метка группы. Чтобы использовать пользовательское имя ссылки, можно заключить имя ссылок в двойные кавычки после метки, как показано в следующем примере </p><pre class="fragment">This is the \ref group_label "link" to this group.
+</pre><p _msttexthash="889198908" _msthash="79">Приоритеты определений группировки (от большего к меньшему): \ingroup, \<a class="el" href="https://www.doxygen.nl/manual/commands.html#cmddefgroup" _istranslated="1">defgroup</a>, \<a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdaddtogroup" _istranslated="1">addtogroup, \weakgroup</a>. <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdweakgroup" _istranslated="1"></a><a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdingroup" _istranslated="1"></a> Команда \<a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdweakgroup" _istranslated="1">weakgroup</a> точно такая же, как <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdaddtogroup" _istranslated="1">и \addtogroup</a>, но с более низким приоритетом. Он был добавлен для того, чтобы разрешить "ленивое" группирование определений: вы можете использовать команды с более высоким приоритетом в файлах .h для определения иерархии и <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdweakgroup" _istranslated="1">\weakgroup</a> в файлах .c без необходимости точно дублировать иерархию.</p>
+<dl class="section user"><dt _msttexthash="809978" _msthash="80">Пример:</dt><dd><div class="fragment"><div class="line"><span class="comment" _msttexthash="7331077" _msthash="81">/** @defgroup группа1 Первая группа</span></div>
+<div class="line"><span class="comment" _msttexthash="3172572" _msthash="82"> * Это первая группа</span></div>
+<div class="line"><span class="comment"> *  @{</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="4297345" _msthash="83">/** @brief класс С1 в группе 1 */</span></div>
+<div class="line" _msttexthash="866021" _msthash="84"><span class="keyword" _istranslated="1">класс </span>С1 {};</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="4297631" _msthash="85">/** @brief класс С2 в группе 1 */</span></div>
+<div class="line" _msttexthash="866190" _msthash="86"><span class="keyword" _istranslated="1">класс </span>С2 {};</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="1327092" _msthash="87">/** в группе 1 */</span></div>
+<div class="line" _msttexthash="189774" _msthash="88"><span class="keywordtype">void</span> func() {}</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/** @} */</span> <span class="comment" _msttexthash="1874431" _msthash="89">Конец группы1</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/**</span></div>
+<div class="line"><span class="comment" _msttexthash="6794554" _msthash="90"> * @defgroup группа2 Вторая группа</span></div>
+<div class="line"><span class="comment" _msttexthash="3174951" _msthash="91"> * Это вторая группа</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="5515406" _msthash="92">/** @defgroup group3 Третья группа</span></div>
+<div class="line"><span class="comment" _msttexthash="3181230" _msthash="93"> * Это третья группа</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="8985743" _msthash="94">/** @defgroup группа4 Четвертая группа</span></div>
+<div class="line"><span class="comment" _msttexthash="1709162" _msthash="95"> * @ingroup группа3</span></div>
+<div class="line"><span class="comment" _msttexthash="9910953" _msthash="96"> * Группа 4 является подгруппой группы 3</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/**</span></div>
+<div class="line"><span class="comment" _msttexthash="1708876" _msthash="97"> * @ingroup группа2</span></div>
+<div class="line"><span class="comment" _msttexthash="4345432" _msthash="98"> * @brief класс С3 во 2 группе</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line" _msttexthash="866359" _msthash="99"><span class="keyword" _istranslated="1">класс </span>С3 {};</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="1910649" _msthash="100">/** @ingroup группа2</span></div>
+<div class="line"><span class="comment" _msttexthash="4345692" _msthash="101"> * @brief класс С4 во 2 группе</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line" _msttexthash="866528" _msthash="102"><span class="keyword" _istranslated="1">класс </span>С4 {};</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="1910961" _msthash="103">/** @ingroup группа3</span></div>
+<div class="line"><span class="comment" _msttexthash="8972106" _msthash="104"> * @brief класс С5 в @link группе3 третьей group@endlink.</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line" _msttexthash="866697" _msthash="105"><span class="keyword" _istranslated="1">класс </span>С5 {};</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="10731422" _msthash="106">/** @ingroup группа1 группа2 группа3 группа4</span></div>
+<div class="line"><span class="comment" _msttexthash="15538081" _msthash="107"> * пространство имен N1 разделено на четыре группы</span></div>
+<div class="line"><span class="comment" _msttexthash="18224726" _msthash="108"> * @sa @link группа1 Первая group@endlink, группа2, группа3, группа4 </span></div>
+<div class="line"><span class="comment"> *</span></div>
+<div class="line"><span class="comment" _msttexthash="1384006" _msthash="109"> * Также см. @ref mypage2</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line" _msttexthash="3409965" _msthash="110"><span class="keyword" _istranslated="1">пространство имен </span>N1 {};</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="89479" _msthash="111">/** @file</span></div>
+<div class="line"><span class="comment" _msttexthash="1709162" _msthash="112"> * @ingroup группа3</span></div>
+<div class="line"><span class="comment" _msttexthash="4544332" _msthash="113"> * @brief этот файл в группе 3</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="6824558" _msthash="114">/** @defgroup группа5 Пятая группа</span></div>
+<div class="line"><span class="comment" _msttexthash="2868723" _msthash="115"> * Это пятая группа</span></div>
+<div class="line"><span class="comment"> *  @{</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="6909487" _msthash="116">/** @page mypage1 Это раздел в группе 5</span></div>
+<div class="line"><span class="comment" _msttexthash="536523" _msthash="117"> *  Text of the first section</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="1612988" _msthash="118">/** @page mypage2 This is another section in group 5</span></div>
+<div class="line"><span class="comment" _msttexthash="570518" _msthash="119"> *  Text of the second section</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/** @} */</span> <span class="comment" _msttexthash="213356" _msthash="120">// end of group5</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="424996" _msthash="121">/** @addtogroup group1</span></div>
+<div class="line"><span class="comment"> *  </span></div>
+<div class="line"><span class="comment" _msttexthash="1151839" _msthash="122"> *  More documentation for the first group.</span></div>
+<div class="line"><span class="comment"> *  @{</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="713934" _msthash="123">/** another function in group 1 */</span></div>
+<div class="line" _msttexthash="203801" _msthash="124"><span class="keywordtype">void</span> func2() {}</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="860990" _msthash="125">/** yet another function in group 1 */</span></div>
+<div class="line" _msttexthash="203996" _msthash="126"><span class="keywordtype">void</span> func3() {}</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">/** @} */</span> <span class="comment" _msttexthash="212368" _msthash="127">// end of group1</span></div>
+<div class="line"> </div>
+</div><!-- fragment --></dd></dl>
+<p _msttexthash="3943225" _msthash="128"> 
+Click <a href="https://www.doxygen.nl/manual/examples/group/html/topics.html">here</a>
+for the corresponding HTML documentation that is generated by doxygen.
+ </p>
+<h1><a class="anchor" id="memgroup"></a><font _mstmutation="1" _msttexthash="205621" _msthash="129">
+Member Groups</font></h1>
+<p _msttexthash="70001087" _msthash="130">If a compound (e.g. a class or file) has many members, it is often desired to group them together. Doxygen already automatically groups things together on type and protection level, but maybe you feel that this is not enough or that that default grouping is wrong. For instance, because you feel that members of different (syntactic) types belong to the same (semantic) group.</p>
+<p _msttexthash="607789" _msthash="131">A member group is defined by a </p><pre class="fragment">///@{
+  ...
+///@}
+</pre><p _msttexthash="115544" _msthash="132"> block or a </p><pre class="fragment">/**@{*/
+  ...
+/**@}*/
+</pre><p _msttexthash="8309938" _msthash="133"> block if you prefer C style comments. Note that the members of the group should be physically inside the member group's body.</p>
+<p _msttexthash="36152311" _msthash="134">Before the opening marker of a block a separate comment block may be placed. This block should contain the <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdname">@name</a> (or <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdname">\name</a>) command and is used to specify the header of the group. Optionally, the comment block may also contain more detailed information about the group.</p>
+<p _msttexthash="1091974" _msthash="135">Nesting of member groups is not allowed.</p>
+<p _msttexthash="169919659" _msthash="136">If all members of a member group inside a class have the same type and protection level (for instance all are static public members), then the whole member group is displayed as a subgroup of the type/protection level group (the group is displayed as a subsection of the "Static Public Members" section for instance). If two or more members have different types, then the group is put at the same level as the automatically generated groups. If you want to force all member-groups of a class to be at the top level, you should put a <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdnosubgrouping">\nosubgrouping</a> command inside the documentation of the class.</p>
+<dl class="section user"><dt _msttexthash="104767" _msthash="137">Example:</dt><dd><div class="fragment"><div class="line"><span class="comment" _msttexthash="337181" _msthash="138">/** A class. Details */</span></div>
+<div class="line" _msttexthash="314262" _msthash="139"><span class="keyword">class </span>Memgrp_Test</div>
+<div class="line">{</div>
+<div class="line">  <font _mstmutation="1" _msttexthash="88127" _msthash="140"><span class="keyword" _mstmutation="1">public</span>:</font><span class="comment"></span></div>
+<div class="line"><span class="comment">    ///@{</span></div>
+<div class="line"><span class="comment"></span><span class="comment" _msttexthash="1591577" _msthash="141">    /** Same documentation for both members. Details */</span></div>
+<div class="line">    <font _mstmutation="1" _msttexthash="364065" _msthash="142"><span class="keywordtype" _mstmutation="1">void</span> func1InGroup1();</font></div>
+<div class="line">    <font _mstmutation="1" _msttexthash="364260" _msthash="143"><span class="keywordtype" _mstmutation="1">void</span> func2InGroup1();</font><span class="comment"></span></div>
+<div class="line"><span class="comment">    ///@}</span></div>
+<div class="line"><span class="comment"></span><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="975390" _msthash="144">    /** Function without group. Details. */</span></div>
+<div class="line">    <font _mstmutation="1" _msttexthash="549354" _msthash="145"><span class="keywordtype" _mstmutation="1">void</span> ungroupedFunction();</font></div>
+<div class="line">    <font _mstmutation="1" _msttexthash="364364" _msthash="146"><span class="keywordtype" _mstmutation="1">void</span> func1InGroup2();</font></div>
+<div class="line">  <font _mstmutation="1" _msttexthash="149552" _msthash="147"><span class="keyword" _mstmutation="1">protected</span>:</font></div>
+<div class="line">    <font _mstmutation="1" _msttexthash="364559" _msthash="148"><span class="keywordtype" _mstmutation="1">void</span> func2InGroup2();</font></div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line" _msttexthash="964275" _msthash="149"><span class="keywordtype">void</span> Memgrp_Test::func1InGroup1() {}</div>
+<div class="line" _msttexthash="964639" _msthash="150"><span class="keywordtype">void</span> Memgrp_Test::func2InGroup1() {}</div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="219674" _msthash="151">/** @name Group2</span></div>
+<div class="line"><span class="comment" _msttexthash="456261" _msthash="152"> *  Description of group 2. </span></div>
+<div class="line"><span class="comment"> */</span><span class="comment"></span></div>
+<div class="line"><span class="comment">///@{</span></div>
+<div class="line"><span class="comment"></span><span class="comment" _msttexthash="779558" _msthash="153">/** Function 2 in group 2. Details. */</span></div>
+<div class="line"><font _mstmutation="1" _msttexthash="965107" _msthash="154"><span class="keywordtype" _mstmutation="1">void</span> Memgrp_Test::func2InGroup2() {}</font><span class="comment"></span></div>
+<div class="line"><span class="comment" _msttexthash="779324" _msthash="155">/** Function 1 in group 2. Details. */</span></div>
+<div class="line"><font _mstmutation="1" _msttexthash="964743" _msthash="156"><span class="keywordtype" _mstmutation="1">void</span> Memgrp_Test::func1InGroup2() {}</font><span class="comment"></span></div>
+<div class="line"><span class="comment">///@}</span></div>
+<div class="line"><span class="comment"></span><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="92066" _msthash="157">/*! \file </span></div>
+<div class="line"><span class="comment" _msttexthash="317174" _msthash="158"> *  docs for this file</span></div>
+<div class="line"><span class="comment"> */</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment" _msttexthash="38935" _msthash="159">//!@{</span></div>
+<div class="line"><span class="comment" _msttexthash="1541111" _msthash="160">//! one description for all members of this group </span></div>
+<div class="line"><span class="comment" _msttexthash="2009514" _msthash="161">//! (because DISTRIBUTE_GROUP_DOC is YES in the config file)</span></div>
+<div class="line"><span class="comment"></span><span class="preprocessor" _msttexthash="109291" _msthash="162">#define A 1</span></div>
+<div class="line"><span class="preprocessor" _msttexthash="109668" _msthash="163">#define B 2</span></div>
+<div class="line"><font _mstmutation="1" _msttexthash="269997" _msthash="164"><span class="keywordtype" _mstmutation="1">void</span> glob_func();</font><span class="comment"></span></div>
+<div class="line"><span class="comment" _msttexthash="39221" _msthash="165">//!@}</span></div>
+</div><!-- fragment --></dd></dl>
+<p _msttexthash="3943225" _msthash="166"> 
+Click <a href="https://www.doxygen.nl/manual/examples/memgrp/html/class_memgrp___test.html">here</a>
+for the corresponding HTML documentation that is generated by doxygen.
+ </p>
+<p _msttexthash="18341388" _msthash="167">Here Group1 is displayed as a subsection of the "Public Members". And Group2 is a separate section because it contains members with different protection levels (i.e. public and protected).</p>
+<h1><a class="anchor" id="subpaging"></a><font _mstmutation="1" _msttexthash="133536" _msthash="168">
+Subpaging</font></h1>
+<p _msttexthash="14976416" _msthash="169">Information can be grouped into pages using the <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdpage">\page</a> and <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdsubpage">\mainpage</a> commands. Normally, this results in a flat list of pages, where the "main" page is the first in the list.</p>
+<p _msttexthash="18014815" _msthash="170">Instead of adding structure using the approach described in section <a class="el" href="https://www.doxygen.nl/manual/grouping.html#topics">topics</a> it is often more natural and convenient to add additional structure to the pages using the <a class="el" href="https://www.doxygen.nl/manual/commands.html#cmdsubpage">\subpage</a> command.</p>
+<p _msttexthash="25058787" _msthash="171">For a page A the \subpage command adds a link to another page B and at the same time makes page B a subpage of A. This has the effect of making two groups GA and GB, where GB is part of GA, page A is put in group GA, and page B is put in group GB.</p>
+<p _msttexthash="1279018" _msthash="172"> 
+Go to the <a href="https://www.doxygen.nl/manual/formulas.html">next</a> section or return to the
+ <a href="https://www.doxygen.nl/manual/index.html">index</a>.
+ </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer" _msttexthash="7780006" _msthash="174">Сгенерировано в сб, окт 21, 2023 21:20:29 для Doxygen Manual by <a href="https://www.doxygen.org/index.html" _istranslated="1"><img class="footer" src="./Руководство по Doxygen_ Группировка_files/doxygen.svg" width="104" height="31" alt="Кислород" _mstalt="99489" _msthash="173" _istranslated="1"></a> 1.10.0 </li>
+  </ul>
+</div>
+<script defer="" src="./Руководство по Doxygen_ Группировка_files/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon="{&quot;rayId&quot;:&quot;82884839dda03ce9&quot;,&quot;r&quot;:1,&quot;version&quot;:&quot;2023.10.0&quot;,&quot;token&quot;:&quot;d2dd7243eb4741c2b26bd9713bbc6840&quot;}" crossorigin="anonymous"></script>
+
+
+<div id="ext-shopintab-box"><div id="ext-shopintab-main-button"></div><div id="ext-shopintab-main-tooltip"></div></div></body><div id="simplytrends-main-extension-styles"><style data-emotion="simplytrends" data-s=""></style></div><div id="simplytrends-main-extension-root"><div class="MuiBox-root simplytrends-0"><link href="./Руководство по Doxygen_ Группировка_files/css2" rel="stylesheet"><div class="MuiBox-root simplytrends-13mg6ph"><div class="MuiBox-root simplytrends-0"></div></div><div class="MuiBox-root simplytrends-1lewe2x" style="visibility: hidden; transform: translateX(0px);"><iframe name="simplytrends" scrolling="no" frameborder="0" height="100%" border="0" src="./Руководство по Doxygen_ Группировка_files/saved_resource.html"></iframe></div></div></div></html>

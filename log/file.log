@@ -1,0 +1,3 @@
+2023-10-13 15:51:05.239 | INFO     | src.helpers.logger:<module>:10 - User {user_id} logged in
+2023-10-13 15:56:24.884 | INFO     | src.helpers.logger:<module>:10 - User {user_id} logged in
+2023-10-13 16:03:46.363 | INFO     | src.helpers.logger:<module>:10 - User {user_id} logged in
