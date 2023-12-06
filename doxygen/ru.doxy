@@ -304,13 +304,15 @@ ALIASES                = "rst=\verbatim embed:rst" \
                          "en_parameter = @~english @parameter" \
                          "en_parameter = @~russian @parameter" \
                          "en_returns = @~english @returns" \
-                         "en_returns = @~russian @returns" \
                          "en_defgroup = @defgroup" \
                          "ru_defgroup = @defgroup" \
                          "en_note = @~english @note" \
                          "ru_note = @~russian @note" \
                          "en_rem = @~english @remark" \
-                         "ru_rem = @~russian @remark"
+                         "ru_rem = @~russian @remark" \
+                         "en_var = @~english @var" \
+                         "ru_var = @~russian @var" \
+                         "ru_returns = @~russian @returns"
 
 # Set the OPTIMIZE_OUTPUT_FOR_C tag to YES if your project consists of C sources
 # only. Doxygen will then generate output that is more tailored for C. For
@@ -587,7 +589,7 @@ EXTRACT_LOCAL_CLASSES  = YES
 # included.
 # The default value is: NO.
 
-EXTRACT_LOCAL_METHODS  = NO
+EXTRACT_LOCAL_METHODS  = YES
 
 # If this flag is set to YES, the members of anonymous namespaces will be
 # extracted and appear in the documentation as a namespace called
@@ -730,14 +732,14 @@ SORT_BRIEF_DOCS        = NO
 # detailed member documentation.
 # The default value is: NO.
 
-SORT_MEMBERS_CTORS_1ST = YES
+SORT_MEMBERS_CTORS_1ST = NO
 
 # If the SORT_GROUP_NAMES tag is set to YES then doxygen will sort the hierarchy
 # of group names into alphabetical order. If set to NO the group names will
 # appear in their defined order.
 # The default value is: NO.
 
-SORT_GROUP_NAMES       = YES
+SORT_GROUP_NAMES       = NO
 
 # If the SORT_BY_SCOPE_NAME tag is set to YES, the class list will be sorted by
 # fully-qualified names, including namespaces. If set to NO, the class list will
@@ -747,7 +749,7 @@ SORT_GROUP_NAMES       = YES
 # list.
 # The default value is: NO.
 
-SORT_BY_SCOPE_NAME     = YES
+SORT_BY_SCOPE_NAME     = NO
 
 # If the STRICT_PROTO_MATCHING option is enabled and doxygen fails to do proper
 # type resolution of all parameters of a function it will reject a match between
@@ -1046,7 +1048,8 @@ EXCLUDE                = ../../src/webdriver/profiles \
                          ../../src/openai/llmsearch \
                          ../../src/prestashop/presta_apis \
                          ../../src/suppliers/aliexpress/iop \
-                         ../../src/suppliers/aliexpress/sdk
+                         ../../src/suppliers/aliexpress/sdk \
+                         ../../src/suppliers/aliexpress/rest
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
