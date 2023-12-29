@@ -304,7 +304,6 @@ ALIASES                = "rst=\verbatim embed:rst" \
                          "en_parameter = @~english @parameter" \
                          "en_parameter = @~russian @parameter" \
                          "en_returns = @~english @returns" \
-                         "ru_returns = @~russian @returns" \
                          "en_defgroup = @defgroup" \
                          "ru_defgroup = @defgroup" \
                          "en_note = @~english @note" \
@@ -1071,9 +1070,7 @@ EXCLUDE_SYMLINKS       = NO
 EXCLUDE_PATTERNS       = *test* \
                          ___*.* \
                          _test* \
-                         *_test*/*.* \
-                         _templates/*.* \
-                         _template_*.*
+                         *_test*/*.*
 
 # The EXCLUDE_SYMBOLS tag can be used to specify one or more symbol names
 # (namespaces, classes, functions, etc.) that should be excluded from the
