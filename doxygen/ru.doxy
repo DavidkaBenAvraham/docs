@@ -61,7 +61,7 @@ PROJECT_BRIEF          = "spyder & parser"
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = C:/Users/user/OneDrive/Изображения/кошка.png
+PROJECT_LOGO           = "C:/Users/user/Documents/repos/hypotez/docs/doxygen/_images/DALL·E 2024-01-08 12.45.19 - collect data from websites into my system, digital art.png"
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
@@ -315,7 +315,9 @@ ALIASES                = "rst=\verbatim embed:rst" \
                          "ru_var = @~russian @var" \
                          "ru_returns = @~russian @returns" \
                          "en_param = @~english @parameter" \
-                         "ru_param = @~russian @parameter"
+                         "ru_param = @~russian @parameter" \
+                         "ru = @~russian" \
+                         "en = @~english"
 
 # Set the OPTIMIZE_OUTPUT_FOR_C tag to YES if your project consists of C sources
 # only. Doxygen will then generate output that is more tailored for C. For
@@ -376,7 +378,10 @@ OPTIMIZE_OUTPUT_SLICE  = NO
 
 EXTENSION_MAPPING      = Python \
                          Markdown \
-                         md
+                         md \
+                         PHP \
+                         JavaScript \
+                         json=JavaScript
 
 # If the MARKDOWN_SUPPORT tag is enabled then doxygen pre-processes all comments
 # according to the Markdown format, which allows for more readable
@@ -448,7 +453,7 @@ SIP_SUPPORT            = NO
 # should set this option to NO.
 # The default value is: YES.
 
-IDL_PROPERTY_SUPPORT   = NO
+IDL_PROPERTY_SUPPORT   = YES
 
 # If member grouping is used in the documentation and the DISTRIBUTE_GROUP_DOC
 # tag is set to YES then doxygen will reuse the documentation of the first
@@ -715,7 +720,7 @@ INLINE_INFO            = YES
 # name. If set to NO, the members will appear in declaration order.
 # The default value is: YES.
 
-SORT_MEMBER_DOCS       = YES
+SORT_MEMBER_DOCS       = NO
 
 # If the SORT_BRIEF_DOCS tag is set to YES then doxygen will sort the brief
 # descriptions of file, namespace and class members alphabetically by member
@@ -849,7 +854,7 @@ FILE_VERSION_FILTER    =
 # DoxygenLayout.xml, doxygen will parse it automatically even if the LAYOUT_FILE
 # tag is left empty.
 
-LAYOUT_FILE            = _layout/layout_ru.xml
+LAYOUT_FILE            = _layout/layout.xml
 
 # The CITE_BIB_FILES tag can be used to specify one or more bib files containing
 # the reference definitions. This must be a list of .bib files. The .bib
@@ -1027,7 +1032,8 @@ FILE_PATTERNS          = *.cs \
                          *.md \
                          *.py \
                          *.pyw \
-                         *.js
+                         *.js \
+                         *.json
 
 # The RECURSIVE tag can be used to specify whether or not subdirectories should
 # be searched for input files as well.
@@ -1049,10 +1055,10 @@ EXCLUDE                = ../../src/webdriver/profiles \
                          ../../src/notebooks \
                          ../../src/openai/chatgpt-telegram \
                          ../../src/openai/llmsearch \
-                         ../../src/prestashop/presta_apis \
                          ../../src/suppliers/aliexpress/iop \
                          ../../src/suppliers/aliexpress/sdk \
-                         ../../src/suppliers/aliexpress/rest
+                         ../../src/suppliers/aliexpress/rest \
+                         ../../src/prestashop/presta_apis
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
@@ -1274,7 +1280,7 @@ VERBATIM_HEADERS       = YES
 # generated with the -Duse_libclang=ON option for CMake.
 # The default value is: NO.
 
-CLANG_ASSISTED_PARSING = YES
+CLANG_ASSISTED_PARSING = NO
 
 # If the CLANG_ASSISTED_PARSING tag is set to YES and the CLANG_ADD_INC_PATHS
 # tag is set to YES then doxygen will add the directory of each input to the
@@ -1626,7 +1632,7 @@ TOC_EXPAND             = NO
 # protocol see https://www.sitemaps.org
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-SITEMAP_URL            =
+SITEMAP_URL            = sitemap.xml
 
 # If the GENERATE_QHP tag is set to YES and both QHP_NAMESPACE and
 # QHP_VIRTUAL_FOLDER are set, an additional index file will be generated that
@@ -1767,7 +1773,7 @@ ENUM_VALUES_PER_LINE   = 4
 # Minimum value: 0, maximum value: 1500, default value: 250.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-TREEVIEW_WIDTH         = 180
+TREEVIEW_WIDTH         = 250
 
 # If the EXT_LINKS_IN_WINDOW option is set to YES, doxygen will open links to
 # external symbols imported via tag files in a separate window.

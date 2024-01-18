@@ -40,7 +40,11 @@
       <tab type="filelist" visible="yes" title="" intro=""/>
       <tab type="globals" visible="yes" title="" intro=""/>
     </tab>
+          <!-- #Пользовательское меню -->
+    <tab type="user" visible="yes" title="Пользовательское меню"/>
+    <tab type="user" visible="yes" title="Таблицы Prestashop" intro=""/>
     <tab type="examples" visible="yes" title="" intro=""/>
+    <tab type="customnavmenu" visible="yes" title="Мое меню"/>
   </navindex>
 
   <!-- Layout definition for a class page -->
@@ -60,6 +64,7 @@
       <publicstaticmethods title=""/>
       <publicattributes title=""/>
       <publicstaticattributes title=""/>
+
       <protectedtypes title=""/>
       <protectedslots title=""/>
       <protectedmethods title=""/>
@@ -260,6 +265,6 @@
       <dirs visible="yes"/>
       <files visible="yes"/>
     </memberdecl>
-    <detaileddescription title=""/>
+    <detaileddescription title="какая-то директория"/>
   </directory>
 </doxygenlayout>
